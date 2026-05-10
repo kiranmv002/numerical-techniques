@@ -1,3 +1,5 @@
+# Bisection Method 
+
 import math
 
 # Function defined using user input
@@ -29,3 +31,12 @@ def bisection(a, b, tol):
         iteration += 1
 
     print("\nApproximate root =", round(c,6))
+
+
+# -------- User Input --------
+func = input("Enter the function f(x): ")
+a = float(input("Enter value of a: "))
+b = float(input("Enter value of b: "))
+tol = float(input("Enter tolerance: "))
+
+bisection(a, b, tol)
