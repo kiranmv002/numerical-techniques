@@ -39,7 +39,7 @@ numerical-techniques/
 | Method | File | Description |
 |--------|------|-------------|
 | Bisection Method | `bisection_method.py` | Bracket-based root finding |
-
+| Regular Falsi | `regular_falsi.py` | False position method |
 
 ---
 
@@ -81,7 +81,7 @@ pip install numpy sympy matplotlib
 ## 🗓️ Progress Tracker
 
 - [x] Root Finding Methods
-- [x] Interpolation Methods
+- [ ] Interpolation Methods
 - [ ] Numerical Differentiation
 - [ ] Numerical Integration
 - [ ] Linear Systems
