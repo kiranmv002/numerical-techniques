@@ -86,3 +86,15 @@ pip install numpy sympy matplotlib
 - [ ] Numerical Integration
 - [ ] Linear Systems
 - [ ] ODE Solvers
+
+---
+
+## 🤝 Contributing
+ 
+Pull requests are welcome! If you find a bug or want to add a new method:
+1. Fork the repo
+2. Create a branch: `git checkout -b feature/new-method`
+3. Commit: `git commit -m "Add new method"`
+4. Push & open a PR
+
+---
