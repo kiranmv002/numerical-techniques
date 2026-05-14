@@ -1,3 +1,5 @@
+# Secant Method
+
 import math
 
 f = input("Enter the function f(x): ")
