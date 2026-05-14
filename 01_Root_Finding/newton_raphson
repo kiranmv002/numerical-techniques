@@ -1,0 +1,39 @@
+# Newton Raphson Method (Simple)
+
+import math
+
+f = input("Enter f(x): ")
+df = input("Enter f'(x): ")
+
+def func(x):
+    return eval(f)
+
+def dfunc(x):
+    return eval(df)
+
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+tol = float(input("Enter tolerance: "))
+
+# Check interval
+if func(a) * func(b) > 0:
+    print("Root not in this interval")
+else:
+    x = (a + b) / 2
+    print("\nInitial guess =", x)
+
+    print("\nIter\t x\t\t f(x)\t\t Next x")
+
+    i = 1
+    while True:
+        x1 = x - func(x) / dfunc(x)
+
+        print(i, "\t", round(x,6), "\t", round(func(x),6), "\t", round(x1,6))
+
+        if abs(x1 - x) < tol:
+            break
+
+        x = x1
+        i += 1
+
+    print("\nRoot =", round(x1,6))
