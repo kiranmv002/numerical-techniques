@@ -32,3 +32,16 @@ print("\nIter\t x0\t\t x1\t\t Error")
 
 i = 1
 
+while True:
+    x1 = gfunc(x0)
+    error = abs(x1 - x0)
+
+    print(i, "\t", round(x0,6), "\t", round(x1,6), "\t", round(error,6))
+
+    if error < tol:
+        break
+
+    x0 = x1
+    i += 1
+
+print("\nApproximate root =", round(x1,6))
