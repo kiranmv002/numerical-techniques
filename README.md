@@ -41,6 +41,7 @@ numerical-techniques/
 | Bisection Method | `bisection_method.py` | Bracket-based root finding |
 | Regular Falsi | `regular_falsi.py` | False position method |
 | Newton-Raphson | `newton_raphson.py` | Derivative-based iteration |
+| Secant Method | `secant_method.py` | Two-point iteration |
 
 ---
 
