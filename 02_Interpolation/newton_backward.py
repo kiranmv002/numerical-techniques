@@ -22,3 +22,16 @@ for i in range(n):
         print(diff[j][i], end="\t")
     print()
 
+# Interpolation
+xp = float(input("\nEnter value to interpolate: "))
+h = x[1] - x[0]
+p = (xp - x[n-1]) / h   # backward u
+
+result = y[n-1]
+term = 1
+
+for i in range(1, n):
+    term = term * (p + (i - 1)) / i
+    result += term * diff[i][n - i - 1]
+
+print("\nInterpolated value =", result)
