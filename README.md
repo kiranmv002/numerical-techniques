@@ -47,7 +47,9 @@ numerical-techniques/
 | Method | File | Description |
 |--------|------|-------------|
 | Newton Forward | `newton_forward.py` | Forward difference interpolation |
-
+| Newton Backward | `newton_backward.py` | Backward difference interpolation |
+| Gauss Forward | `gauss_forward.py` | Gauss forward formula |
+| Gauss Backward | `gauss_backward.py` | Gauss backward formula |
 
 ---
 
