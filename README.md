@@ -29,6 +29,12 @@ numerical-techniques/
 │   ├── secant_method.py
 │   └── fixed_point_method.py
 │
+├── 02_Interpolation/
+│   ├── newton_forward.py
+│   ├── newton_backward.py
+│   ├── gauss_forward.py
+│   ├── gauss_backward.py
+│   └── sterlings_interpolation.py
 ```
 
 ---
