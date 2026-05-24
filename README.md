@@ -43,6 +43,12 @@ numerical-techniques/
 | Newton-Raphson | `newton_raphson.py` | Derivative-based iteration |
 | Secant Method | `secant_method.py` | Two-point iteration |
 
+### 2️⃣ Interpolation
+| Method | File | Description |
+|--------|------|-------------|
+| Newton Forward | `newton_forward.py` | Forward difference interpolation |
+
+
 ---
 
 ## ⚙️ How to Run
