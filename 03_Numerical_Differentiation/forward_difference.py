@@ -49,3 +49,16 @@ xp = float(input("Enter the value of x to differentiate at: "))
 h = x[1] - x[0]
 diff = forward_difference_table(y, n)
 idx = x.index(xp)
+
+# First Derivative
+dy = (1 / h) * (diff[1][idx] - (1/2)*diff[2][idx] + (1/3)*diff[3][idx]) if n > 3 else (1 / h) * diff[1][idx]
+
+# Second Derivative
+d2y = (1 / h**2) * (diff[2][idx] - diff[3][idx]) if n > 3 else (1 / h**2) * diff[2][idx]
+
+print("\nForward Difference Table:")
+for i, row in enumerate(diff):
+    print(f"  Delta^{i}y: {row}")
+
+print(f"\nFirst Derivative  dy/dx  at x = {xp} is: {dy}")
+print(f"Second Derivative d²y/dx² at x = {xp} is: {d2y}")
