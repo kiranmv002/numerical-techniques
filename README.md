@@ -63,6 +63,11 @@ numerical-techniques/
 | Gauss Forward | `gauss_forward.py` | Gauss forward formula |
 | Gauss Backward | `gauss_backward.py` | Gauss backward formula |
 
+### 3️⃣ Numerical Differentiation
+| Method | File | Description |
+|--------|------|-------------|
+| Forward Difference | `forward_difference.py` | First & second order |
+
 ---
 
 ## ⚙️ How to Run
