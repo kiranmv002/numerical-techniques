@@ -67,6 +67,8 @@ numerical-techniques/
 | Method | File | Description |
 |--------|------|-------------|
 | Forward Difference | `forward_difference.py` | First & second order |
+| Backward Difference | `backward_difference.py` | First & second order |
+| Central Difference | `central_difference.py` | Higher accuracy |
 
 ---
 
