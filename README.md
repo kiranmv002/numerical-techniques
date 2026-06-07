@@ -38,6 +38,8 @@ numerical-techniques/
 │
 ├── 03_Numerical_Differentiation/
 │   ├── forward_difference.py
+│   ├── backward_difference.py
+│   └── central_difference.py
 
 ```
 
@@ -116,5 +118,3 @@ Pull requests are welcome! If you find a bug or want to add a new method:
 2. Create a branch: `git checkout -b feature/new-method`
 3. Commit: `git commit -m "Add new method"`
 4. Push & open a PR
-
----
