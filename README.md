@@ -35,6 +35,10 @@ numerical-techniques/
 │   ├── gauss_forward.py
 │   ├── gauss_backward.py
 │   └── sterlings_interpolation.py
+│
+├── 03_Numerical_Differentiation/
+│   ├── forward_difference.py
+
 ```
 
 ---
