@@ -44,6 +44,8 @@ numerical-techniques/
 |
 ├── 04_Numerical_Integration/
 │   ├── trapezoidal_rule.py
+|   ├── simpsons 1 3.py
+│   └── simpsons 3 8.py
 
 
 ```
