@@ -22,3 +22,12 @@ for i in range(n):
     y.append(float(input(f"y[{i}] = ")))
 
 # Compute integral
+result = trapezoidal(x, y, n)
+
+print("\nTrapezoidal Rule Table:")
+print(f"  {'x':>8}  {'y':>10}")
+print("  " + "-" * 22)
+for i in range(n):
+    print(f"  {x[i]:>8.4f}  {y[i]:>10.4f}")
+
+print(f"\nApproximate value of integral = {result}")
