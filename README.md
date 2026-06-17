@@ -40,6 +40,11 @@ numerical-techniques/
 │   ├── forward_difference.py
 │   ├── backward_difference.py
 │   └── central_difference.py
+|
+|
+├── 04_Numerical_Integration/
+│   ├── trapezoidal_rule.py
+
 
 ```
 
