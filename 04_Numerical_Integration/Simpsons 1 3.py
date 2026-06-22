@@ -1,3 +1,4 @@
+# Simpson's 1/3 Rule with User Input Function and Table Display
 import math
 
 # Function to compute Simpson's 1/3 Rule
