@@ -82,8 +82,8 @@ numerical-techniques/
 | Method | File | Description |
 |--------|------|-------------|
 | Trapezoidal Rule | `trapezoidal_rule.py` | Area under curve |
-
-
+| Simpson's 1/3 | `simpsons_1_3.py` | Parabolic approximation |
+| Simpson's 3/8 | `simpsons_3_8.py` | Cubic approximation |
 
 ---
 
