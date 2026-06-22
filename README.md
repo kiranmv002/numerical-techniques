@@ -77,6 +77,14 @@ numerical-techniques/
 | Backward Difference | `backward_difference.py` | First & second order |
 | Central Difference | `central_difference.py` | Higher accuracy |
 
+
+### 4️⃣ Numerical Integration
+| Method | File | Description |
+|--------|------|-------------|
+| Trapezoidal Rule | `trapezoidal_rule.py` | Area under curve |
+
+
+
 ---
 
 ## ⚙️ How to Run
