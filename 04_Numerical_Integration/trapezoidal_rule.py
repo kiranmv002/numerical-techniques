@@ -1,33 +1,37 @@
+# Trapezoidal Rule with User Input Function and Table Display
 import math
-
-# Function to compute Trapezoidal Rule
-def trapezoidal(x, y, n):
-    h = x[1] - x[0]
-    # Formula: h/2 * [y0 + 2(y1+y2+...+yn-1) + yn]
-    middle_sum = sum(y[i] for i in range(1, n - 1))
-    result = (h / 2) * (y[0] + 2 * middle_sum + y[n - 1])
-    return result
-
-# --------------------------------
-# USER INPUT SECTION
-# --------------------------------
-n = int(input("Enter number of data points: "))
+# Input function
+expr = input("Enter function f(x): ")
+# Input limits and number of subintervals
+a = float(input("Enter lower limit a: "))
+b = float(input("Enter upper limit b: "))
+n = int(input("Enter number of subintervals n: "))
+# Function evaluator
+def f(x):
+    return eval(expr, {"x": x, "math": math})
+# Calculate step size
+h = (b - a) / n
+# Generate x values and corresponding f(x) values
 x = []
-y = []
-print("Enter x values:")
-for i in range(n):
-    x.append(float(input(f"x[{i}] = ")))
-print("Enter y values:")
-for i in range(n):
-    y.append(float(input(f"y[{i}] = ")))
-
+fx = []
+for i in range(n + 1):
+    xi = a + i * h
+    x.append(xi)
+    fx.append(f(xi))
+# Display table
+print("\nTRAPEZOIDAL RULE TABLE")
+print("-" * 40)
+print(f"{'i':<5}{'x':<15}{'f(x)':<15}")
+print("-" * 40)
+for i in range(n + 1):
+    print(f"{i:<5}{x[i]:<15.4f}{fx[i]:<15.4f}")
 # Compute integral
-result = trapezoidal(x, y, n)
-
-print("\nTrapezoidal Rule Table:")
-print(f"  {'x':>8}  {'y':>10}")
-print("  " + "-" * 22)
-for i in range(n):
-    print(f"  {x[i]:>8.4f}  {y[i]:>10.4f}")
-
-print(f"\nApproximate value of integral = {result}")
+s = fx[0] + fx[n]
+for i in range(1, n):
+    s += 2 * fx[i]
+I = (h / 2) * s
+# Display result
+print("\nFormula:")
+print("I = (h/2) * [f(x0) + 2*f(x1) + 2*f(x2) + ... + 2*f(x(n-1)) + f(xn)]")
+print("\nStep size h =", round(h, 4))
+print("Approximate integral =", round(I, 6))
