@@ -46,7 +46,11 @@ numerical-techniques/
 │   ├── trapezoidal_rule.py
 |   ├── simpsons 1 3.py
 │   └── simpsons 3 8.py
-
+|
+|
+├── 06_ODE_Solvers/
+│   ├── README.md
+│   ├── eulers_method.py
 
 ```
 
