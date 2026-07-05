@@ -51,6 +51,8 @@ numerical-techniques/
 ├── 06_ODE_Solvers/
 │   ├── README.md
 │   ├── eulers_method.py
+│   ├── modified_euler.py
+│   └── runge_kutta_4.py
 
 ```
 
