@@ -91,6 +91,12 @@ numerical-techniques/
 | Simpson's 1/3 | `simpsons_1_3.py` | Parabolic approximation |
 | Simpson's 3/8 | `simpsons_3_8.py` | Cubic approximation |
 
+### 6️⃣ ODE Solvers
+| Method | File | Description |
+|--------|------|-------------|
+| Euler's Method | `eulers_method.py` | First order ODE |
+
+
 ---
 
 ## ⚙️ How to Run
