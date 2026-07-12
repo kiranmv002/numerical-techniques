@@ -53,6 +53,12 @@ numerical-techniques/
 │   ├── eulers_method.py
 │   ├── modified_euler.py
 │   └── runge_kutta_4.py
+|
+|
+├── 07_Curve_Fitting/
+│   ├── exponential_power_curve.py
+│   └── fitted_exponential_curve.py
+
 
 ```
 
