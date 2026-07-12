@@ -144,7 +144,7 @@ pip install numpy sympy matplotlib
 ## 🗓️ Progress Tracker
 
 - [x] Root Finding Methods
-- [ ] Interpolation Methods
+- [x] Interpolation Methods
 - [ ] Numerical Differentiation
 - [ ] Numerical Integration
 - [ ] Linear Systems
