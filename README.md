@@ -145,7 +145,7 @@ pip install numpy sympy matplotlib
 
 - [x] Root Finding Methods
 - [x] Interpolation Methods
-- [ ] Numerical Differentiation
+- [x] Numerical Differentiation
 - [ ] Numerical Integration
 - [ ] Linear Systems
 - [ ] ODE Solvers
