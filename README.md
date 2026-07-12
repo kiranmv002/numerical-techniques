@@ -95,7 +95,8 @@ numerical-techniques/
 | Method | File | Description |
 |--------|------|-------------|
 | Euler's Method | `eulers_method.py` | First order ODE |
-
+| Modified Euler | `modified_euler.py` | Improved accuracy |
+| Runge-Kutta 4 | `runge_kutta_4.py` | 4th order accuracy |
 
 ---
 
