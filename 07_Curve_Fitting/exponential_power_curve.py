@@ -25,3 +25,14 @@ b = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX**2)
 # Find a
 A = (sumY - b * sumX) / n
 a = math.exp(A)
+
+print("a =", a)
+print("b =", b)
+
+print("Fitted exponential curve:")
+print("y =", round(a, 4), "* e^(", round(b, 4), "x)")
+
+# Estimate y for user input x value
+xp = float(input("Enter a value of x to estimate y: "))
+y_est = a * math.exp(b * xp)
+print("Estimated y =", round(y_est, 4))
