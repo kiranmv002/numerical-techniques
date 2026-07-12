@@ -147,7 +147,7 @@ pip install numpy sympy matplotlib
 - [x] Interpolation Methods
 - [x] Numerical Differentiation
 - [x] Numerical Integration
-- [ ] Linear Systems
+- [x] Linear Systems
 - [ ] ODE Solvers
 
 ---
