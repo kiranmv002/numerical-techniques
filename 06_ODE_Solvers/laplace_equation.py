@@ -33,3 +33,9 @@ for k in range(itr):
     for i in range(1, n + 1):
         for j in range(1, n + 1):
             u[i][j] = 0.25 * (u[i - 1][j] + u[i + 1][j] + u[i][j - 1] + u[i][j + 1]) /4
+# Print the solution
+print("\nSolution after " + str(itr) + " iterations\n: ")
+for i in range(n + 2):
+    for j in range(n + 2):
+        print(f"{u[i][j]:.4f}", end="\t")
+    print()
