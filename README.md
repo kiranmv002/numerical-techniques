@@ -52,8 +52,8 @@ numerical-techniques/
 │   ├── README.md
 │   ├── eulers_method.py
 │   ├── modified_euler.py
-│   └── runge_kutta_4.py
-|
+│   ├──runge_kutta_4.py
+|   └──heat_equation.py
 |
 ├── 07_Curve_Fitting/
 │   ├── exponential_power_curve.py
