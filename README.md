@@ -57,8 +57,8 @@ numerical-techniques/
 |
 ├── 07_Curve_Fitting/
 │   ├── exponential_power_curve.py
-│   └── fitted_exponential_curve.py
-
+│   ├── fitted_exponential_curve.py
+|   └── fitting_straight_line.py 
 
 ```
 
