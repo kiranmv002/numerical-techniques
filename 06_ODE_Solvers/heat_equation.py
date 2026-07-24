@@ -20,3 +20,15 @@ for i in range(n + 1):
 print("\nInitial Values")
 print(u)
 # Time iterations
+for j in range(1, m + 1):
+    new = u.copy()
+    t = j      # or t = j*k if k is specified
+    # Boundary values
+    new[0] = eval(left)
+    new[n] = eval(right)
+    # Interior points
+    for i in range(1, n):
+        new[i] = (u[i - 1] + u[i + 1]) / 2
+    u = new
+    print("\nTime Step", j)
+    print([round(value, 4) for value in u])
