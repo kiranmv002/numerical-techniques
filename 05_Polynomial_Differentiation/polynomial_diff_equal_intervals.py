@@ -24,3 +24,21 @@ for i in range(n):
         print(round(diff_table[j][i], 4), end="\t")
     print()
 X = symbols('X')
+#newton forward polynomial
+u = (X - x[0]) / h
+poly = y[0]
+term = 1
+for i in range(1, n):
+    term = term * (u - (i - 1)) / i
+    poly += term * diff_table[i][0]
+poly = expand(poly)
+print("\nInterpolation Polynomial:")
+print(poly)
+#Differentiate polynomaial
+dpoly = diff(poly, X)
+print("\nDifferentiated Polynomial:")
+print(dpoly)
+#Estimation 
+xp = float(input("\nEnter x value for derivative estimation: "))
+value = dpoly.subs(X, xp)
+print(f"\nf'({xp}) = {round(float(value),4)}")
