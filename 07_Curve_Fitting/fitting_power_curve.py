@@ -16,3 +16,17 @@ sumY = sum(Y)
 sumXY = sum(X[i] * Y[i] for i in range(n))
 sumX2 = sum(X[i]**2 for i in range(n))
 
+# Find b
+b = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX**2)
+# Find a
+A = (sumY - b * sumX) / n
+a = math.exp(A)
+print("a =", a)
+print("b =", b)
+print("Fitted power curve: ")
+print("y =", round(a, 4), "* x^", round(b, 4))
+
+# Estimate y for a given x value
+xp = float(input("Enter a value of x to estimate y: "))
+y_est = a * (xp ** b)
+print("Estimated y = ", round(y_est, 4))
