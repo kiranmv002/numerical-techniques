@@ -26,3 +26,28 @@ if func(a) * func(b) > 0:
     print("No root in this interval")
     exit()
 
+# Initial guess (midpoint)
+x0 = (a + b) / 2
+
+print("\nInitial interval: [", a, ",", b, "]")
+print("Initial guess x0 =", round(x0, 6))
+
+print("\nIter\t x_n\t\t f(x_n)\t\t x_(n+1)")
+
+i = 1
+
+while True:
+    fx = func(x0)
+    dfx = dfunc(x0)
+
+    x1 = x0 - fx / dfx
+
+    print(i, "\t", round(x0,6), "\t", round(fx,6), "\t", round(x1,6))
+
+    if abs(x1 - x0) < tol:
+        break
+
+    x0 = x1
+    i += 1
+
+print("\nApproximate Root =", round(x1,6))
