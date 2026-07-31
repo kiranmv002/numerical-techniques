@@ -48,6 +48,12 @@ numerical-techniques/
 │   └── simpsons 3 8.py
 |
 |
+
+├── 05_Polynomial_Differentiation/
+│   ├── polynomial_diff_equal_intervals.py
+│   └── polynomial_diff_unequal_intervals.py
+|
+|
 ├── 06_ODE_Solvers/
 │   ├── README.md
 │   ├── eulers_method.py
